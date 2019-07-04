@@ -61,7 +61,7 @@ public class MinecraftByExample
   // you also need to update the modid and version in two other places as well:
   //  build.gradle file (the version, group, and archivesBaseName parameters)
   //  resources/mcmod.info (the name, description, and version parameters)
-   public static final String MODID = "minecraftbyexample";
+   public static final String MODID = "minecraftmodtemplate";
     public static final String VERSION = "1.12.2a";
 
     public static final String GUIFACTORY = "minecraftbyexample.mbe70_configuration.MBEGuiFactory"; //delete if MBE70 not present
