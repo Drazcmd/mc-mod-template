@@ -41,6 +41,8 @@ If you prefer to use IntelliJ, steps are a little different.
 
 "gradlew genIntellijRuns" (./gradlew genIntellijRuns if you are on Mac/Linux)
 
+4. There may also be some additional work you need to do in order to get your 'assets' directory set up correctly! See https://mcforge.readthedocs.io/en/latest/gettingstarted/#terminal-free-intellij-idea-configuration (look at the step that says how to 'fix the classpath module') 
+
 Step 4: The final step is to open Eclipse and switch your workspace to /eclipse/ (if you use IDEA, it should automatically start on your project)
 
 If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not affect your code} and then start the processs again.
