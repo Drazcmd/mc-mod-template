@@ -1,0 +1,7 @@
+
+.gradle/
+!.gradle/wrapper/
+build/
+.idea/
+run/
+out/

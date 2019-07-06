@@ -41,6 +41,8 @@ If you prefer to use IntelliJ, steps are a little different.
 
 "gradlew genIntellijRuns" (./gradlew genIntellijRuns if you are on Mac/Linux)
 
+3.5 Possibly there's some extra work to do: see https://mcforge.readthedocs.io/en/latest/gettingstarted/#terminal-free-intellij-idea-configuration (most importantly, look at the step that says how to 'fix the classpath module'). Also you may possibly want to run 'gradlew idea' and import settings from the generated .ipr file, however this does not appear to be explicitly listed there anymore.
+
 Step 4: The final step is to open Eclipse and switch your workspace to /eclipse/ (if you use IDEA, it should automatically start on your project)
 
 If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not affect your code} and then start the processs again.
