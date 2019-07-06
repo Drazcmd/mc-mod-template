@@ -5,3 +5,4 @@ build/
 .idea/
 run/
 out/
+mc-mod-template.i*
