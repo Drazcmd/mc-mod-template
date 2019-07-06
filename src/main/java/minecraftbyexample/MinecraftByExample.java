@@ -61,6 +61,7 @@ public class MinecraftByExample
   // you also need to update the modid and version in two other places as well:
   //  build.gradle file (the version, group, and archivesBaseName parameters)
   //  resources/mcmod.info (the name, description, and version parameters)
+  // EDIT - actually it'll also break some resources loading, probably need to go update the various json files too
    public static final String MODID = "minecraftbyexample";
     public static final String VERSION = "1.12.2a";
 
