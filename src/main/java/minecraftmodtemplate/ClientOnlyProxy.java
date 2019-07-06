@@ -1,4 +1,4 @@
-package minecraftbyexample;
+package minecraftmodtemplate;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
@@ -19,8 +19,8 @@ public class ClientOnlyProxy extends CommonProxy
   public void preInit()
   {
     super.preInit();
-    minecraftbyexample.mbe70_configuration.StartupClientOnly.preInitClientOnly();
-    minecraftbyexample.mbe01_block_simple.StartupClientOnly.preInitClientOnly();
+    minecraftmodtemplate.mbe70_configuration.StartupClientOnly.preInitClientOnly();
+    minecraftmodtemplate.mbe01_block_simple.StartupClientOnly.preInitClientOnly();
   }
 
   /**
@@ -30,8 +30,8 @@ public class ClientOnlyProxy extends CommonProxy
   public void init()
   {
     super.init();
-    minecraftbyexample.mbe70_configuration.StartupClientOnly.initClientOnly();
-    minecraftbyexample.mbe01_block_simple.StartupClientOnly.initClientOnly();
+    minecraftmodtemplate.mbe70_configuration.StartupClientOnly.initClientOnly();
+    minecraftmodtemplate.mbe01_block_simple.StartupClientOnly.initClientOnly();
   }
 
   /**
@@ -40,8 +40,8 @@ public class ClientOnlyProxy extends CommonProxy
   public void postInit()
   {
     super.postInit();
-    minecraftbyexample.mbe70_configuration.StartupClientOnly.postInitClientOnly();
-    minecraftbyexample.mbe01_block_simple.StartupClientOnly.postInitClientOnly();
+    minecraftmodtemplate.mbe70_configuration.StartupClientOnly.postInitClientOnly();
+    minecraftmodtemplate.mbe01_block_simple.StartupClientOnly.postInitClientOnly();
   }
 
   @Override

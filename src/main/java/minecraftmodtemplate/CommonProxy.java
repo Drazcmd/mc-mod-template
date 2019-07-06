@@ -1,4 +1,4 @@
-package minecraftbyexample;
+package minecraftmodtemplate;
 
 import net.minecraft.entity.player.EntityPlayer;
 
@@ -15,8 +15,8 @@ public abstract class CommonProxy {
   public void preInit()
   {
 	  // note how we read config first
-	  minecraftbyexample.mbe70_configuration.StartupCommon.preInitCommon();
-      minecraftbyexample.mbe01_block_simple.StartupCommon.preInitCommon();
+	  minecraftmodtemplate.mbe70_configuration.StartupCommon.preInitCommon();
+      minecraftmodtemplate.mbe01_block_simple.StartupCommon.preInitCommon();
   }
 
   /**
@@ -25,8 +25,8 @@ public abstract class CommonProxy {
    */
   public void init()
   {
-	minecraftbyexample.mbe70_configuration.StartupCommon.initCommon();
-    minecraftbyexample.mbe01_block_simple.StartupCommon.initCommon();
+	minecraftmodtemplate.mbe70_configuration.StartupCommon.initCommon();
+    minecraftmodtemplate.mbe01_block_simple.StartupCommon.initCommon();
   }
 
   /**
@@ -34,8 +34,8 @@ public abstract class CommonProxy {
    */
   public void postInit()
   {
-	minecraftbyexample.mbe70_configuration.StartupCommon.postInitCommon();
-    minecraftbyexample.mbe01_block_simple.StartupCommon.postInitCommon();
+	minecraftmodtemplate.mbe70_configuration.StartupCommon.postInitCommon();
+    minecraftmodtemplate.mbe01_block_simple.StartupCommon.postInitCommon();
 
   }
 

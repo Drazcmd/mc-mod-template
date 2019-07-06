@@ -1,4 +1,4 @@
-package minecraftbyexample.usefultools;
+package minecraftmodtemplate.usefultools;
 
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;

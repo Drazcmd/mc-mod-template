@@ -13,7 +13,7 @@ Parts to understand are:
 * Both `Startup` Classes
 * Main mod file `MinecraftByExample`:
     * guiFactory = `MinecraftByExample.GUIFACTORY` in the @Mod annotation
-* `resources\assets\minecraftbyexample\lang\en_US.lang` -- for displayed names in the GUI
+* `resources\assets\minecraftmodtemplate\lang\en_US.lang` -- for displayed names in the GUI
 
 ## Common errors
 

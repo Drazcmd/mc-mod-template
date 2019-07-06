@@ -1,4 +1,4 @@
-package minecraftbyexample;
+package minecraftmodtemplate;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -45,7 +45,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
     it will cause the following error message when preInitCommon() is called:
     java.lang.NoClassDefFoundError: net/minecraft/client/renderer/tileentity/TileEntitySpecialRenderer
-  	at minecraftbyexample.CommonProxy.preInit(CommonProxy.java:25) ~[CommonProxy.class:?]
+  	at minecraftmodtemplate.CommonProxy.preInit(CommonProxy.java:25) ~[CommonProxy.class:?]
      Caused by: java.lang.RuntimeException: Attempted to load class net/minecraft/client/renderer/tileentity/TileEntitySpecialRenderer for invalid side SERVER
 	   at net.minecraftforge.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:49) ~[forgeSrc-1.8-11.14.0.1285-1.8.jar:?]
 
@@ -54,9 +54,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
    The initClientOnly method must be moved to a different class StartupClientOnly, which is never loaded in the DedicatedServer at all.
  */
 
-@Mod(modid = MinecraftByExample.MODID, version = MinecraftByExample.VERSION,
-     guiFactory= MinecraftByExample.GUIFACTORY)  //delete guiFactory if MBE70 not present and you don't have a configuration GUI
-public class MinecraftByExample
+@Mod(modid = MinecraftModTemplate.MODID, version = MinecraftModTemplate.VERSION,
+     guiFactory= MinecraftModTemplate.GUIFACTORY)  //delete guiFactory if MBE70 not present and you don't have a configuration GUI
+public class MinecraftModTemplate
 {
   // you also need to update the modid and version in two other places as well:
   //  build.gradle file (the version, group, and archivesBaseName parameters)
@@ -64,14 +64,14 @@ public class MinecraftByExample
    public static final String MODID = "minecraftmodtemplate";
     public static final String VERSION = "1.12.2a";
 
-    public static final String GUIFACTORY = "minecraftbyexample.mbe70_configuration.MBEGuiFactory"; //delete if MBE70 not present
+    public static final String GUIFACTORY = "minecraftmodtemplate.mbe70_configuration.MBEGuiFactory"; //delete if MBE70 not present
 
     // The instance of your mod that Forge uses.  Optional.
-    @Mod.Instance(MinecraftByExample.MODID)
-    public static MinecraftByExample instance;
+    @Mod.Instance(MinecraftModTemplate.MODID)
+    public static MinecraftModTemplate instance;
 
     // Says where the client and server 'proxy' code is loaded.
-    @SidedProxy(clientSide="minecraftbyexample.ClientOnlyProxy", serverSide="minecraftbyexample.DedicatedServerProxy")
+    @SidedProxy(clientSide="minecraftmodtemplate.ClientOnlyProxy", serverSide="minecraftmodtemplate.DedicatedServerProxy")
     public static CommonProxy proxy;
 
     @EventHandler
@@ -95,7 +95,7 @@ public class MinecraftByExample
     /**
      * Prepend the name with the mod ID, suitable for ResourceLocations such as textures.
      * @param name
-     * @return eg "minecraftbyexample:myblockname"
+     * @return eg "minecraftmodtemplate:myblockname"
      */
     public static String prependModID(String name) {return MODID + ":" + name;}
 }

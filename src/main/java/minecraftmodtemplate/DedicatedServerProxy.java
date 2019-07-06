@@ -1,4 +1,4 @@
-package minecraftbyexample;
+package minecraftmodtemplate;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;

@@ -1,6 +1,6 @@
-package minecraftbyexample.mbe70_configuration;
+package minecraftmodtemplate.mbe70_configuration;
 
-import minecraftbyexample.MinecraftByExample;
+import minecraftmodtemplate.MinecraftModTemplate;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
@@ -60,7 +60,7 @@ public class MBEConfiguration {
 		 * and you specify the name of the config file, together this works
 		 * similar to the old getSuggestedConfigurationFile() function.
 		 */
-		File configFile = new File(Loader.instance().getConfigDir(), "MinecraftByExample.cfg");
+		File configFile = new File(Loader.instance().getConfigDir(), "MinecraftModTemplate.cfg");
 
 		// initialize your configuration object with your configuration file values.
 		config = new Configuration(configFile);
@@ -296,7 +296,7 @@ public class MBEConfiguration {
 		@SubscribeEvent(priority = EventPriority.NORMAL)
 		public void onEvent(ConfigChangedEvent.OnConfigChangedEvent event)
 		{
-			if (MinecraftByExample.MODID.equals(event.getModID()) && !event.isWorldRunning())
+			if (MinecraftModTemplate.MODID.equals(event.getModID()) && !event.isWorldRunning())
 			{
 				if (event.getConfigID().equals(CATEGORY_NAME_GENERAL) || event.getConfigID().equals(CATEGORY_NAME_OTHER))
 				{

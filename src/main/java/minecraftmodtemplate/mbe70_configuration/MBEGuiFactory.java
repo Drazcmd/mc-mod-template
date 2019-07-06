@@ -1,6 +1,6 @@
-package minecraftbyexample.mbe70_configuration;
+package minecraftmodtemplate.mbe70_configuration;
 
-import minecraftbyexample.MinecraftByExample;
+import minecraftmodtemplate.MinecraftModTemplate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
@@ -52,7 +52,7 @@ public class MBEGuiFactory implements IModGuiFactory
 		public MBEConfigGui(GuiScreen parentScreen)
 		{
 			//I18n function basically "translates" or localizes the given key using the appropriate .lang file
-			super(parentScreen, getConfigElements(), MinecraftByExample.MODID,
+			super(parentScreen, getConfigElements(), MinecraftModTemplate.MODID,
             false, false, I18n.format("gui.mbe70_configuration.mainTitle"));
 		}
 

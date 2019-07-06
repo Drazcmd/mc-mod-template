@@ -1,4 +1,4 @@
-package minecraftbyexample.usefultools;
+package minecraftmodtemplate.usefultools;
 
 import net.minecraft.util.math.Vec3d;
 

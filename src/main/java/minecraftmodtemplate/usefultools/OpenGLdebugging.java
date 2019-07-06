@@ -1,4 +1,4 @@
-package minecraftbyexample.usefultools;
+package minecraftmodtemplate.usefultools;
 
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;

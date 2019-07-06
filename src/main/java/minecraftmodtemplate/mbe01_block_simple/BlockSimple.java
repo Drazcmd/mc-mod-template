@@ -1,4 +1,4 @@
-package minecraftbyexample.mbe01_block_simple;
+package minecraftmodtemplate.mbe01_block_simple;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

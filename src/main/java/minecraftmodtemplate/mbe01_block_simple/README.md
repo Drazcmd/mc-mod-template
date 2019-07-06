@@ -12,11 +12,11 @@ The pieces you need to understand are located in:
 
 * `Startup`
 * `BlockSimple`
-* `resources\assets\minecraftbyexample\lang\en_US.lang` -- for the displayed name of the block
-* `resources\assets\minecraftbyexample\blockstates\mbe01_block_simple` -- for the blockstate definition
-* `resources\assets\minecraftbyexample\models\block\mbe01_block_simple_model` -- for the model used to render the block
-* `resources\assets\minecraftbyexample\textures\blocks\mbe01_***.png` -- textures used for the faces of the block. The particle texture, used for the flying shards when the block is destroyed, is based on the vanilla lapis lazuli block texture.
-* `resources\assets\minecraftbyexample\models\item\mbe01_block_simple_model` -- the model for rendering the block as an item (i.e. in your hand, in the inventory, when thrown on the ground)
+* `resources\assets\minecraftmodtemplate\lang\en_US.lang` -- for the displayed name of the block
+* `resources\assets\minecraftmodtemplate\blockstates\mbe01_block_simple` -- for the blockstate definition
+* `resources\assets\minecraftmodtemplate\models\block\mbe01_block_simple_model` -- for the model used to render the block
+* `resources\assets\minecraftmodtemplate\textures\blocks\mbe01_***.png` -- textures used for the faces of the block. The particle texture, used for the flying shards when the block is destroyed, is based on the vanilla lapis lazuli block texture.
+* `resources\assets\minecraftmodtemplate\models\item\mbe01_block_simple_model` -- the model for rendering the block as an item (i.e. in your hand, in the inventory, when thrown on the ground)
 
 The block will appear in the Blocks tab in the creative inventory.
 
@@ -36,6 +36,6 @@ These are caused when you have specified a filename or path which is not correct
 
 1. You've misspelled it
 1. The upper/lower case doesn't match
-1. You've forgotten the resource domain, eg `blockmodel` instead of `minecraftbyexample:blockmodel`
+1. You've forgotten the resource domain, eg `blockmodel` instead of `minecraftmodtemplate:blockmodel`
 1. The folder structure of your assets folders is incorrect
 1. If using IntelliJ 14--the assets aren't copied to the right place, you need to apply a fix to your `build.gradle`, see [http://www.minecraftforge.net/forum/index.php/topic,21354.0.html](http://www.minecraftforge.net/forum/index.php/topic,21354.0.html)

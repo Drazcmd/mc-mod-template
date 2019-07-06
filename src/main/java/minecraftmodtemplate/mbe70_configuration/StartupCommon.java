@@ -1,4 +1,4 @@
-package minecraftbyexample.mbe70_configuration;
+package minecraftmodtemplate.mbe70_configuration;
 
 /*
  * User: TW
@@ -11,7 +11,7 @@ package minecraftbyexample.mbe70_configuration;
  *  initClientOnly
  *  postInitCommon
  *  postInitClientOnly
- *  See MinecraftByExample class for more information
+ *  See MinecraftModTemplate class for more information
  */
 public class StartupCommon
 {
